@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    body 
+    {
+      
+      background-color: hsl(0, 100%, 74%);
+      background-image: url("bg-intro-desktop.png");
+      background-repeat: repeat;
+      display: inline-block;
+      height: auto;
+      width: auto;
+    }
+   
+    * 
+  {
+      box-sizing: border-box;
+  }
+ /* .row 
+  {
+      display: inline-block;
+      position: relative;
+      align-items: center;
+      width: 100%;
+         
+  } */
+body 
+  {
+      margin: 0;
+  }
+.left 
+  {
+    display: inline-block;
+    position: relative;  
+    width: auto;
+    left: 25%;
+    top: -5em;
+           
+  }
+
+.right 
+  {
+      
+      align-items: center;
+      justify-content: center;
+      display: inline-block;
+      position: relative;  
+      width: auto;
+      top: 2em;
+      left: 30%;
+      padding-top: 0;
+      margin-left: 2.5em;
+    
+   }
+
+   .rthead
+{
+  width: 140%;
+  border-style:solid; 
+  border-color:#090491; 
+  background-color:#090491; 
+  text-align:center; 
+  border-size:1px;
+  border-radius:10px;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  box-shadow: 0px 2px 7px 0px #000000;
+  -webkit-box-shadow: 0px 2px 7px 0px #000000;
+  -moz-box-shadow: 0px 2px 7px 0px #000000;
+
+ 
+}
+
+.rtmain
+{
+  width: 140%;
+  background-color: white; 
+  text-align:center; 
+  border-radius:10px;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+ 
+   
+}
+
+.ltmain
+{
+  display:inline-block;
+  position: relative;
+    
+}
+
+  p.a
+    {
+       
+       color: white;
+       margin-top: 0em;
+       margin-bottom: 0em;
+       font-size: 3em;
+       font-family: 'Poppins', sans-serif;
+       margin-block-start: 0em;
+       margin-block-end: 0em;
+       line-height: 1em;
+    }
+    p
+    {
+       font-size: 16px;
+       font-family: Tahoma, Geneva, sans-serif;
+       font-weight: normal;
+       color: white;
+       line-height: 20px;
+      
+    }
+
+    br {
+      margin-top: 0em;
+       margin-bottom: 0em;
+        margin-block-start: 0em;
+       margin-block-end: 0em;
+    }
+
+ input[type=text], [type=email], [type=password]
+        {
+            width: 90%;
+            padding: 12px 20px;
+            margin-top: 20px;
+            margin-bottom:20px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            border-style: solid; 
+            border-color: rgb(216, 216, 216);          
+        }
+  input[type=submit]
+   {
+            width: 90%;
+            padding: 12px 20px;
+            margin-top: 20px;
+            margin-bottom:0px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            border-style: solid; 
+            border-color: rgb(216, 216, 216);     
+            background-color: #00cc66;  
+            font-size:16px;
+            color: white;
+            font-family: Tahoma, Geneva, sans-serif;
+            font-weight: 900;   
+   }      
+
+   input:invalid 
+    {
+      background-color: none;
+      border-color: red;
+      background-position: 370px;
+      display: inline-block;
+         
+      background-image: url("icon-error.svg");
+      background-repeat: no-repeat;
+      
+      }
+
+      ::placeholder 
+      {
+        font-weight: bold;
+      }
+    </style>
+</head>
+   <body>
+     <!--<div class="row"> -->
+      <div class="left" style="margin-top: 0em; margin-left: 0em;">
+        <div class="ltmain">
+          <p class="a">Learn to code by<br>
+           watching others</p>
+          <p>See how experienced developers solve problems in real-time.<br> Watching scripted tutorials is great, but understanding how<br> developers think is invaluable.</p>
+            </div>
+      </div>
+      <div class="right">
+        <div class="rthead">
+          <p style="font-size:15px;"><b>Try it free 7 days</b> then $20/mo. therefater</p>
+        </div>
+        <div class="rtmain">
+          <form action="">
+            <label for="firstname"></label>
+            <input type="text" placeholder="First Name" required><br>
+            <label for="lastname"></label>
+            <input type="text" placeholder="Last Name" required><br>
+            <label for="email"></label>
+            <input type="email" placeholder="Email" required><br>
+            <label for="password"></label>
+            <input type="password" placeholder="Password" required><br>
+            <input type="submit" value="CLAIM YOUR FREE TRIAL">
+            <p style="color: rgb(192, 190, 190); font-size: 10px; margin-bottom: 20px; padding-bottom: 30px;">
+              By clicking the button you are agreeing to our <span style="color: red; font-weight: bold;">terms and conditions</span> </p>
+        </form>
+        </div>
+        </div>
+      <!--</div>-->
+   </body>
+   <!-- <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer>  -->
+
+</html>
